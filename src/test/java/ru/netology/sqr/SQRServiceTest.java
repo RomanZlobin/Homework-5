@@ -10,9 +10,9 @@ public class SQRServiceTest {
     @CsvSource({
             "200,300,3",
             "200,350,4",
-            "200,400,7"
+            "0, 99, 0"
     })
-    public void test (int limitMin, int limitMax, int expected) {
+    public void test(int limitMin, int limitMax, int expected) {
         SQRService service = new SQRService();
         int actual = service.sortCount(limitMin, limitMax);
 
